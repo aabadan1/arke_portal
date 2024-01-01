@@ -1,0 +1,25 @@
+.label-black {
+    color: black;
+  }
+  .custom-dropdown {
+    min-width: 370px;  /* Adjust the width as needed */
+  }
+  .form-group {
+    margin-right: 15px; /* Adjust the margin as needed for spacing between filters */
+}
+
+.form-control {
+    width: 250px; /* Adjust the width as needed */
+} 
+.form-control.gray-text {
+    color: gray;
+}
+.form-control.navbar-search-dark{
+    color: rgb(72 61 61 / 75%);
+}
+.navbar-search.form-inline {
+    margin-left: 155px; /* Adjust the margin as needed to move it towards the left */
+}
+.ml-lg-auto {
+    margin-left: 45px !important;
+}

@@ -7,7 +7,8 @@
     </button>
     <!-- Brand -->
     <a class="navbar-brand pt-0" routerLinkActive="active" [routerLink]="['/dashboard']">
-      <img src="./assets/img/brand/red.png" class="navbar-brand-img" alt="...">
+      <!-- <img src="./assets/img/brand/red.png" class="navbar-brand-img" alt="..."> -->
+      <h1><strong style="font-size: 50px;">ARKe</strong></h1>
     </a>
     <!-- User -->
     <ul class="nav align-items-center d-md-none">
@@ -87,6 +88,27 @@
           </div>
         </div>
       </form>
+        <!-- Divider -->
+        <hr class="my-2">
+        <!-- Heading -->
+        <h6 class="navbar-heading text-muted">Home</h6>
+        <!-- Navigation -->
+        <ul class="navbar-nav mb-md-3">
+          <li class="nav-item">
+            <a class="nav-link" href="/dashboard">
+              <i class="ni ni-tv-2 text-black"></i> Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+              <i class="ni ni-single-02"></i> User Profile
+            </a>
+          </li>
+        </ul>
+            <!-- Divider -->
+            <hr class="my-2">
+            <!-- Heading -->
+            <h6 class="navbar-heading text-muted">Modules</h6>
       <!-- Navigation -->
       <ul class="navbar-nav">
           <li *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
@@ -97,26 +119,38 @@
           </li>
       </ul>
       <!-- Divider -->
-      <hr class="my-3">
+      <hr class="my-2">
       <!-- Heading -->
-      <h6 class="navbar-heading text-muted">Documentation</h6>
+      <h6 class="navbar-heading text-muted">Reports</h6>
       <!-- Navigation -->
       <ul class="navbar-nav mb-md-3">
         <li class="nav-item">
-          <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard-angular/documentation/tutorial">
-            <i class="ni ni-spaceship"></i> Getting started
+          <a class="nav-link">
+            <i class="ni ni-spaceship" icon="💯"></i> Live Reports
           </a>
         </li>
+      </ul>
+      <!-- Divider -->
+      <hr class="my-2">
+      <!-- Heading -->
+      <h6 class="navbar-heading text-muted">Administration</h6>
+      <!-- Navigation -->
+      <ul class="navbar-nav mb-md-3">
         <li class="nav-item">
+          <a class="nav-link">
+            <i class="ni ni-settings-gear-65"></i> Admin Control Panel
+          </a>
+        </li>
+        <!-- <li class="nav-item">
           <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard-angular/documentation/colors">
             <i class="ni ni-palette"></i> Foundation
           </a>
-        </li>
-        <li class="nav-item">
+        </li> -->
+        <!-- <li class="nav-item">
           <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard-angular/documentation/alerts">
             <i class="ni ni-ui-04"></i> Components
           </a>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>

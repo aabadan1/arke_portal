@@ -9763,7 +9763,9 @@ button.bg-darker:focus
     margin: -6rem !important;
 }
 
-.mt--7,
+.mt--7{
+    margin: 6rem !important;
+}
 .my--7
 {
     margin-top: -6rem !important;
@@ -10549,7 +10551,7 @@ button.bg-darker:focus
 .pt-7,
 .py-7
 {
-    padding-top: 6rem !important;
+    padding-top: 5rem !important;
 }
 
 .pr-7,
@@ -13470,7 +13472,10 @@ button.bg-darker:focus
     {
         margin-bottom: auto !important;
     }
-    .ml-lg-auto,
+    .ml-lg-auto 
+    {
+        margin-left: 75 !important;
+    }
     .mx-lg-auto
     {
         margin-left: auto !important;
@@ -15071,7 +15076,7 @@ button.bg-lighter:focus
 
 .bg-gradient-danger
 {
-    background: linear-gradient(87deg, #f5365c 0, #f56036 100%) !important;
+    background: linear-gradient(87deg, #f20f3c 0, #f40f44 100%) !important;
 }
 
 .bg-gradient-light
@@ -19008,7 +19013,7 @@ textarea[resize='horizontal']
 
 .navbar-horizontal .navbar-dark .navbar-brand
 {
-    color: #fff;
+    color: white;
 }
 
 .navbar-horizontal .navbar-light .navbar-brand
