@@ -13,7 +13,7 @@ import { UserProfileComponent } from '../../pages/user-profile/user-profile.comp
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { QuoteConfiguratorComponent } from 'src/app/pages/quoteconfigurator/quote-configurator.component';
-import { TablesComponent } from 'src/app/pages/rfqconfigurator/tables.component';
+import { RFQConfiguratorComponent } from 'src/app/pages/rfqconfigurator/rfqconfigurator.component';
 
 // import { ToastrModule } from 'ngx-toastr';
 
@@ -29,7 +29,7 @@ import { TablesComponent } from 'src/app/pages/rfqconfigurator/tables.component'
   declarations: [
     DashboardComponent,
     UserProfileComponent,
-    TablesComponent,
+    RFQConfiguratorComponent,
     IconsComponent,
     MapsComponent,
     QuoteConfiguratorComponent

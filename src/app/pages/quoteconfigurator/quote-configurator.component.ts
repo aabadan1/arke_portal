@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-tables',
+  selector: 'app-quoteconfigurator',
   templateUrl: './quote-configurator.component.html',
   styleUrls: ['./quote-configurator.component.scss']
 })

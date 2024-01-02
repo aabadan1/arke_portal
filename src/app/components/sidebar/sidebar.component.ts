@@ -12,7 +12,7 @@ export const ROUTES: RouteInfo[] = [
     // { path: '', title: 'User profile',  icon:'ni-single-02 text-yellow', class: '' },
     { path: '/rfqconfigurator', title: 'RFQ Configurator',  icon:'ni-books text-black', class: '' },
     { path: '/quoteconfigurator', title: 'Quote Configurator',  icon:'fas fa-file-alt text-black', class: '' },
-    { path: '/tables', title: 'Evaluation Engine',  icon:'fas fa-percent text-black', class: '' },
+    { path: '/ss', title: 'Evaluation Engine',  icon:'fas fa-percent text-black', class: '' },
     { path: '/rfq', title: 'Award Engine',  icon:'fas fa-ribbon text-black', class: '' },
     { path: '/ffq', title: 'Catalog Configurator',  icon:'fas fa-book-open text-black', class: '' }
 ];

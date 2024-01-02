@@ -7,8 +7,9 @@
 </div>
 <div class="header pb-8 pt-5 pt-md-6 red-background">
   <div class="container-fluid" style="display: flex; justify-content: space-between; align-items: center;">
-    <h1 class="mb-0" style="color: white;">Quote Configurator</h1>
-    <button class="button-10" role="button">Add Quote</button>
+    <h1 class="mb-0" style="color: white;">RFQ Configurator</h1>
+    <button class="button-10" role="button">Add New</button>
+    <!-- <button class="button" style="float: right;">Add</button> -->
   </div>
 </div>
 <!-- Page content -->
@@ -25,6 +26,7 @@
             <thead class="thead-light">
               <tr>
                 <!-- <th scope="col"></th> -->
+                <!-- <th scope="col">Expand</th> -->
                 <th scope="col">PFQ ID</th>
                 <th scope="col">Project Type</th>
                 <th scope="col">Due Date</th>
@@ -34,30 +36,44 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">
+              <ng-container *ngFor="let item of items">
+                <tr>
+                  <!-- <td>
+                    <button (click)="toggleSubmodule(item)">+</button>
+                </td> -->
+                <th scope="row" *ngIf="visible">
                   <div class="media align-items-center">
                     <div class="media-body">
-                      <span class="mb-0 text-sm">RFQ-01</span>
+                      <span class="mb-0 text-sm">{{ item.rfqId }}</span>
                     </div>
                   </div>
                 </th>
-                <td>
-                  Factory Line
-                </td>
-                <td>
-                  <span class="badge badge-dot mr-4">
-                    <i class="bg-warning"></i> pending
-                  </span>
-                </td>
-                <td>
-                  <span class="badge badge-dot mr-4">
-                    <i class="bg-warning"></i> Active
-                  </span>
-                </td>
-              </tr>
+                  <th scope="row">
+                    <div class="media align-items-center">
+                      <div class="media-body">
+                        <span class="mb-0 text-sm">RFQ-01</span>
+                      </div>
+                    </div>
+                  </th>
+                  <td>
+                    Factory Line
+                  </td>
+                  <td>
+                    <span class="badge badge-dot mr-4">
+                      <i class="bg-warning"></i> pending
+                    </span>
+                  </td>
+                  <td>
+                    <span class="badge badge-dot mr-4">
+                      <i class="bg-warning"></i> Active
+                    </span>
+                  </td>
+                </tr>
+              </ng-container>
               <tr>
-             
+                <!-- <td>
+                  
+                </td> -->
                 <th scope="row">
                   <div class="media align-items-center">
                     <div class="media-body">
@@ -107,9 +123,6 @@
               <tr>
                 <th scope="row">
                   <div class="media align-items-center">
-                    <!-- <a href="javascript:void(0)" class="avatar rounded-circle mr-3">
-                      <img alt="Image placeholder" src="../assets/img/theme/sketch.jpg">
-                    </a> -->
                     <div class="media-body">
                       <span class="mb-0 text-sm">RFQ-03</span>
                     </div>
@@ -132,9 +145,6 @@
               <tr>
                 <th scope="row">
                   <div class="media align-items-center">
-                    <!-- <a href="javascript:void(0)" class="avatar rounded-circle mr-3">
-                      <img alt="Image placeholder" src="../assets/img/theme/react.jpg">
-                    </a> -->
                     <div class="media-body">
                       <span class="mb-0 text-sm">RFQ-04</span>
                     </div>
@@ -157,9 +167,6 @@
               <tr>
                 <th scope="row">
                   <div class="media align-items-center">
-                    <!-- <a href="javascript:void(0)" class="avatar rounded-circle mr-3">
-                      <img alt="Image placeholder" src="../assets/img/theme/vue.jpg">
-                    </a> -->
                     <div class="media-body">
                       <span class="mb-0 text-sm">RFQ-05</span>
                     </div>

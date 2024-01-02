@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TablesComponent } from './tables.component';
+import { RFQConfiguratorComponent } from './rfqconfigurator.component';
 
-describe('TablesComponent', () => {
-  let component: TablesComponent;
-  let fixture: ComponentFixture<TablesComponent>;
+describe('RFQConfiguratorComponent', () => {
+  let component: RFQConfiguratorComponent;
+  let fixture: ComponentFixture<RFQConfiguratorComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TablesComponent ]
+      declarations: [ RFQConfiguratorComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TablesComponent);
+    fixture = TestBed.createComponent(RFQConfiguratorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
